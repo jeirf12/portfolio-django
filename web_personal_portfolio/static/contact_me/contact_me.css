@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form > span {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.form > * {
+  margin-bottom: 4%;
+}
+
+.form > div > input, .form > div > textarea {
+  border-radius: 0.5rem;
+  border: 0.1px solid #9b9b9b;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.form > button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: 0.1px solid #9b9b9b;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px dotted black;
+  border-radius: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

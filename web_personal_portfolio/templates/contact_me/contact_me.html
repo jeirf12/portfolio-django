@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'contact_me/contact_me.css' %}">
+<div class="form-container">
+  <form class="form" method="POST" action="">
+    {% csrf_token %}
+    <span>¡Contactame!</span>
+    <div class="form-control">
+      <label for="">Nombre completo:</label>
+      <input type="text" name="name_complete">
+    </div>
+    <div class="form-control">
+      <label for="">Correo:</label>
+      <input type="text" name="email">
+    </div>
+    <div class="form-control">
+      <label for="">Mensaje:</label>
+      <textarea name="message" id="" cols="1" rows="5"></textarea>
+    </div>
+    <button type="submit">Enviar información</button>
+  </form>
+</div>
