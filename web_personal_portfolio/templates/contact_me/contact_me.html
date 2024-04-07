@@ -1,5 +1,7 @@
 {% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
 <link rel="stylesheet" href="{% static 'contact_me/contact_me.css' %}">
+
 <div class="form-container">
   <form class="form" method="POST" action="">
     {% csrf_token %}

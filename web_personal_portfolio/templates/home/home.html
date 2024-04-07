@@ -1,1 +1,12 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+<main class="m-4 p-5 flex flex-col">
+{% if messages %}
+  {% for message in messages %}
+    <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+      {{message}}
+    </div>
+  {% endfor %}
+{% endif %}
 <p>{{ title }}</p>
+</main>
